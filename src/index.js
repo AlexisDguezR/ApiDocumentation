@@ -12,7 +12,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(morgan("dev"));
 app.use(cors());
-app.use("/api-docs", swaggerUI.serve, swaggerUI.setup(docs));
+app.use("/", swaggerUI.serve, swaggerUI.setup(docs));
 
 //initialize the app.
 async function initialize() {
