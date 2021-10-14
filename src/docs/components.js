@@ -3,6 +3,27 @@ const e = require("express");
 module.exports = {
   components: {
     schemas: {
+      idToken: {
+        type: "string",
+        description: "session token",
+        example:
+          "eyJhbGciOiJSUzI1NiIsImtpZCI6ImY0MTk2YWVlMTE5ZmUyMTU5M2Q0OGJmY2ZiNWJmMDAxNzdkZDRhNGQiLCJ0eXAiOiJKV1QifQ.eyJpc3MiOiJhY2NvdW50cy5nb29nbGUuY29tIiwiYXpwIjoiODQ1ODM0OTUzNzUxLXNraDZubjMzNmRxbm1naGcyaXNucmZwcm9uYmozNnA3LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwiYXVkIjoiODQ1ODM0OTUzNzUxLXNraDZubjMzNmRxbm1naGcyaXNucmZwcm9uYmozNnA3LmFwcHMuZ29vZ2xldXNlcmNvbnRlbnQuY29tIiwic3ViIjoiMTA4MDUyNjQxNTQ4Nzg0ODQ5OTI5IiwiZW1haWwiOiJlZXIxMDE4OTVAZ21haWwuY29tIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImF0X2hhc2giOiJfaUViVHpGTWgzby1ZM2w4YWFlTTV3IiwiaWF0IjoxNjM0MDYwMDgxLCJleHAiOjE2MzQwNjM2ODF9.jEnqOB4bT8k_nkOxGJIUGq2zmPNNrY6TUq_8Y0Vz5vXUCOeAw_GaVvpVyadB8QAhCoqchHLS_jhl90rKHMU6xPh3m0Uq5azhX8XgxwmBZOD4JywA17ptf2Yo_QMaP774Jh4CBrjtC5dTgEeaE-NLHUPFH4UGeCNXIu5g9ay3HYTR1w7O7_M1VpJ8OPZkRQURM85Nx15F1gaMmh9qA-OydRLwDulGBnQR4v51Ot2tyN5NjtuSXBpiZBLuprF3br6QMe64A36FfZxbY2Vo3o97yvp0R_rZ2PetL1sMMSY1qdr8tNrVQg39TvqhGrppY8L2FN4W4vZzlhsxta6jN20YkA",
+      },
+      progress: {
+        type: "string",
+        description: "progress number",
+        example: 0.5224545486524,
+      },
+      viewIndex: {
+        type: "string",
+        description: "view index number",
+        example: 1,
+      },
+      email: {
+        type: "string",
+        description: "user email",
+        example: "correo@correo.com",
+      },
       remoteSession: {
         type: "object",
         description: "data of the remote session",
