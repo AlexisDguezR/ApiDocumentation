@@ -7,7 +7,7 @@ module.exports = {
     contact: {
       name: "Neuron Health", // your name
       email: "operaciones@neuron.health", // your email
-      url: "fuve.app", // your website
+      url: "http://fuve.app", // your website
     },
   },
 };
